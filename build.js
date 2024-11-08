@@ -58,6 +58,5 @@ for (var i = 0; i < 3; i++) {
 }
 horizontalLine();
 var _areCollinear = areCollinear(points[0], points[1], points[2]);
-console.log(_areCollinear);
 horizontalLine();
-console.log("Results\n".concat(points[0].name, "(").concat(points[0].cordinates.x, ",").concat(points[0].cordinates.y, "), ").concat(points[1].name, "(").concat(points[1].cordinates.x, ",").concat(points[1].cordinates.y, "), ").concat(points[2].name, "(").concat(points[2].cordinates.x, ",").concat(points[2].cordinates.y, ")\nare").concat(_areCollinear ? ' ' : ' not ', "Collinear Points"));
+console.log("".concat(points[0].name, "(").concat(points[0].cordinates.x, ",").concat(points[0].cordinates.y, "), ").concat(points[1].name, "(").concat(points[1].cordinates.x, ",").concat(points[1].cordinates.y, "), ").concat(points[2].name, "(").concat(points[2].cordinates.x, ",").concat(points[2].cordinates.y, ") are").concat(_areCollinear ? ' ' : ' not ', "Collinear Points"));

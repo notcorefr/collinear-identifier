@@ -70,11 +70,10 @@ for (let i = 0; i < 3; i++) {
 horizontalLine();
 
 const _areCollinear = areCollinear(points[0], points[1], points[2]);
-console.log(_areCollinear)
 
 horizontalLine();
 
-console.log(`Results\n${points[0].name}(${points[0].cordinates.x},${points[0].cordinates.y}), ${points[1].name}(${points[1].cordinates.x},${points[1].cordinates.y}), ${points[2].name}(${points[2].cordinates.x},${points[2].cordinates.y})\nare${_areCollinear ? ' ' : ' not '}Collinear Points`)
+console.log(`${points[0].name}(${points[0].cordinates.x},${points[0].cordinates.y}), ${points[1].name}(${points[1].cordinates.x},${points[1].cordinates.y}), ${points[2].name}(${points[2].cordinates.x},${points[2].cordinates.y}) are${_areCollinear ? ' ' : ' not '}Collinear Points`)
 
 
 export { }
