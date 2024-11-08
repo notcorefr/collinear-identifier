@@ -20,7 +20,7 @@ let d = (a: Point, b: Point): number => {
     return distance;
 }
 
-let areColinear = (a: Point, b: Point, c: Point): boolean => {
+let areCollinear = (a: Point, b: Point, c: Point): boolean => {
     // ab bc ac 
     let ab = d(a, b);
     let bc = d(b, c);
@@ -43,7 +43,8 @@ let horizontalLine = (): void => {
 
 
 horizontalLine();
-console.log(`To Check Whether The points are colinear or not, Enter the Co-ordinates for those 3 Points,\nsuppose these 3 points are A, B, C`)
+console.log("To check whether the points are collinear, enter the coordinates for three points.");
+console.log("Suppose these 3 points are A, B, and C.");
 
 
 let points: Point[] = [];
@@ -68,12 +69,12 @@ for (let i = 0; i < 3; i++) {
 
 horizontalLine();
 
-const _areColinear = areColinear(points[0], points[1], points[2]);
-console.log(_areColinear)
+const _areCollinear = areCollinear(points[0], points[1], points[2]);
+console.log(_areCollinear)
 
 horizontalLine();
 
-console.log(`Results\n${points[0].name}(${points[0].cordinates.x},${points[0].cordinates.y}), ${points[1].name}(${points[1].cordinates.x},${points[1].cordinates.y}), ${points[2].name}(${points[2].cordinates.x},${points[2].cordinates.y})\nare${_areColinear ? ' ' : ' not '}Co-Linear Points`)
+console.log(`Results\n${points[0].name}(${points[0].cordinates.x},${points[0].cordinates.y}), ${points[1].name}(${points[1].cordinates.x},${points[1].cordinates.y}), ${points[2].name}(${points[2].cordinates.x},${points[2].cordinates.y})\nare${_areCollinear ? ' ' : ' not '}Collinear Points`)
 
 
 export { }

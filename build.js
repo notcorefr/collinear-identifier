@@ -17,7 +17,7 @@ var d = function (a, b) {
     console.log("d(".concat(a.name, ",").concat(b.name, ") = ").concat(distance));
     return distance;
 };
-var areColinear = function (a, b, c) {
+var areCollinear = function (a, b, c) {
     // ab bc ac 
     var ab = d(a, b);
     var bc = d(b, c);
@@ -40,7 +40,8 @@ var horizontalLine = function () {
     console.log('---------------');
 };
 horizontalLine();
-console.log("To Check Whether The points are colinear or not, Enter the Co-ordinates for those 3 Points,\nsuppose these 3 points are A, B, C");
+console.log("To check whether the points are collinear, enter the coordinates for three points.");
+console.log("Suppose these 3 points are A, B, and C.");
 var points = [];
 for (var i = 0; i < 3; i++) {
     var name_1 = String.fromCharCode(65 + i);
@@ -56,7 +57,7 @@ for (var i = 0; i < 3; i++) {
     points.push(new Point(name_1, x, y));
 }
 horizontalLine();
-var _areColinear = areColinear(points[0], points[1], points[2]);
-console.log(_areColinear);
+var _areCollinear = areCollinear(points[0], points[1], points[2]);
+console.log(_areCollinear);
 horizontalLine();
-console.log("Results\n".concat(points[0].name, "(").concat(points[0].cordinates.x, ",").concat(points[0].cordinates.y, "), ").concat(points[1].name, "(").concat(points[1].cordinates.x, ",").concat(points[1].cordinates.y, "), ").concat(points[2].name, "(").concat(points[2].cordinates.x, ",").concat(points[2].cordinates.y, ")\nare").concat(_areColinear ? ' ' : ' not ', "Co-Linear Points"));
+console.log("Results\n".concat(points[0].name, "(").concat(points[0].cordinates.x, ",").concat(points[0].cordinates.y, "), ").concat(points[1].name, "(").concat(points[1].cordinates.x, ",").concat(points[1].cordinates.y, "), ").concat(points[2].name, "(").concat(points[2].cordinates.x, ",").concat(points[2].cordinates.y, ")\nare").concat(_areCollinear ? ' ' : ' not ', "Collinear Points"));
