@@ -1,14 +1,13 @@
 const prompt = require('prompt-sync')();
 
 class Point {
-    readonly name: string = '';
+    // readonly name: string = '';
     readonly cordinates: { x: number, y: number } = { x: 0, y: 0 };
 
 
-    constructor(name: string, x: number, y: number) {
-        this.name = name;
-        this.cordinates.x = x;
-        this.cordinates.y = y;
+    constructor(public name: string, x: number, y: number) {
+        // this.cordinates.x = x;
+        // this.cordinates.y = y;
     }
 
 }
